@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="text" class="input" placeholder="Enter city name..." />
+        <button type="submit" class="btn">
+          <i class="fas fa-search"> </i>
+        </button>
+      </form>
+
+      <div class="error">
+        <p>city name not found...</p>
+      </div>
+
+      <div class="weather-details">
+        <div class="today">
+          <p class="time"></p>
+          <p class="date"></p>
+        </div>
+
+        <div class="weather-content">
+          <div class="weather">
+            <img src="" alt="weather" />
+            <h1></h1>
+            <span>
+              <h2></h2>
+              <i class="fas fa-location-arrow"></i>
+            </span>
+          </div>
+
+          <div class="weather-readings">
+            <div>
+              <img src="./images/humidity.png" alt="humidity" />
+              <h3>Humidity</h3>
+              <span class="humidity"></span>
+            </div>
+
+            <div>
+              <img src="./images/wind.png" alt="wind" />
+              <h3>Wind</h3>
+              <span class="speed"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/0f816a078b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
